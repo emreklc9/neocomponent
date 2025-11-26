@@ -23,7 +23,10 @@ export default defineConfig({
           'react-dom': 'ReactDOM'
         },
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name === 'style.css') return 'style.css';
+          // CSS dosyasını her zaman style.css olarak adlandır
+          if (assetInfo.name && assetInfo.name.endsWith('.css')) {
+            return 'style.css';
+          }
           return assetInfo.name || 'asset';
         }
       }
