@@ -12,7 +12,7 @@
       "import": "./dist/neo-component.es.js",
       "require": "./dist/neo-component.umd.js"
     },
-    "./style.css": "./dist/neo-component.css"
+    "./style.css": "./dist/style.css"
   },
   "files": [
     "dist"
