@@ -8,11 +8,11 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/neo-component.es.js",
-      "require": "./dist/neo-component.umd.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/neo-component.umd.js"
     },
-    "./style.css": "./dist/style.css"
+    "./style.css": "./dist/neo-component.css"
   },
   "files": [
     "dist"
