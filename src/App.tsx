@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Calendar, Button, Text } from './components'
+import { Calendar, Button, Text, VideoSlider } from './components'
 import './App.css'
 
 function App() {
@@ -122,6 +122,12 @@ function App() {
             <Text align="right">Right Aligned Text</Text>
           </div>
         </div>
+      </div>
+      <div className="video-slider-demo">
+        <Text as="h2" size="2xl" weight="bold" className="demo-title">
+          Video Slider Bileşeni
+        </Text>
+        <VideoSlider />
       </div>
     </div>
   )

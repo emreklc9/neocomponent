@@ -47,13 +47,18 @@
 
 .calendar-demo,
 .button-demo,
-.text-demo {
+.text-demo,
+.video-slider-demo {
   background: white;
   border-radius: 16px;
   padding: 30px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 800px;
+}
+
+.video-slider-demo {
+  max-width: 100%;
 }
 
 .button-group {
@@ -94,7 +99,8 @@
   
   .calendar-demo,
   .button-demo,
-  .text-demo {
+  .text-demo,
+  .video-slider-demo {
     padding: 20px;
   }
 
