@@ -1,0 +1,194 @@
+.neo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.neo-button:focus-visible {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}
+
+.neo-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Boyutlar */
+.neo-button--small {
+  padding: 6px 12px;
+  font-size: 13px;
+  min-height: 32px;
+}
+
+.neo-button--medium {
+  padding: 10px 20px;
+  font-size: 14px;
+  min-height: 40px;
+}
+
+.neo-button--large {
+  padding: 14px 28px;
+  font-size: 16px;
+  min-height: 48px;
+}
+
+/* Varyantlar */
+.neo-button--primary {
+  background: #1976d2;
+  color: #ffffff;
+}
+
+.neo-button--primary:hover:not(:disabled) {
+  background: #1565c0;
+  box-shadow: 0 2px 4px rgba(25, 118, 210, 0.3);
+}
+
+.neo-button--primary:active:not(:disabled) {
+  background: #0d47a1;
+  transform: translateY(1px);
+}
+
+.neo-button--secondary {
+  background: #f5f5f5;
+  color: #1a1a1a;
+  border: 1px solid #e0e0e0;
+}
+
+.neo-button--secondary:hover:not(:disabled) {
+  background: #eeeeee;
+  border-color: #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.neo-button--secondary:active:not(:disabled) {
+  background: #e0e0e0;
+  transform: translateY(1px);
+}
+
+.neo-button--outline {
+  background: transparent;
+  color: #1976d2;
+  border: 2px solid #1976d2;
+}
+
+.neo-button--outline:hover:not(:disabled) {
+  background: #e3f2fd;
+  border-color: #1565c0;
+  color: #1565c0;
+}
+
+.neo-button--outline:active:not(:disabled) {
+  background: #bbdefb;
+  transform: translateY(1px);
+}
+
+.neo-button--ghost {
+  background: transparent;
+  color: #666;
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+
+.neo-button--ghost:hover:not(:disabled) {
+  background: #f5f5f5;
+  color: #1a1a1a;
+}
+
+.neo-button--ghost:active:not(:disabled) {
+  background: #eeeeee;
+  transform: translateY(1px);
+}
+
+.neo-button--danger {
+  background: #d32f2f;
+  color: #ffffff;
+}
+
+.neo-button--danger:hover:not(:disabled) {
+  background: #c62828;
+  box-shadow: 0 2px 4px rgba(211, 47, 47, 0.3);
+}
+
+.neo-button--danger:active:not(:disabled) {
+  background: #b71c1c;
+  transform: translateY(1px);
+}
+
+/* Full Width */
+.neo-button--full-width {
+  width: 100%;
+}
+
+/* Loading State */
+.neo-button--loading {
+  pointer-events: none;
+}
+
+.neo-button-spinner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.neo-button-spinner-svg {
+  width: 100%;
+  height: 100%;
+  animation: neo-button-spin 1s linear infinite;
+}
+
+.neo-button-spinner-circle {
+  stroke: currentColor;
+}
+
+.neo-button-content--loading {
+  opacity: 0.7;
+}
+
+@keyframes neo-button-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .neo-button--small {
+    padding: 5px 10px;
+    font-size: 12px;
+    min-height: 30px;
+  }
+
+  .neo-button--medium {
+    padding: 8px 16px;
+    font-size: 13px;
+    min-height: 36px;
+  }
+
+  .neo-button--large {
+    padding: 12px 24px;
+    font-size: 15px;
+    min-height: 44px;
+  }
+}
+

@@ -37,11 +37,9 @@ export const Calendar: React.FC<CalendarProps> = ({
   onDateSelect,
   minDate,
   maxDate,
-  view = 'month',
   weekStartsOn = 1,
   className = '',
 }) => {
-  const [currentDate, setCurrentDate] = useState(new Date());
   const [viewingDate, setViewingDate] = useState(selectedDate || new Date());
 
   const monthNames = [

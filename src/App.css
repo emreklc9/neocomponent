@@ -23,8 +23,11 @@
 
 .app-content {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .calendar-demo {
@@ -36,11 +39,38 @@
   width: 100%;
 }
 
-.calendar-demo h2 {
+.demo-title {
   margin-top: 0;
   margin-bottom: 20px;
   color: #1a1a1a;
-  font-size: 1.5rem;
+}
+
+.calendar-demo,
+.button-demo,
+.text-demo {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 800px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #f9f9f9;
+  border-radius: 8px;
 }
 
 .selected-date-info {
@@ -62,7 +92,17 @@
     font-size: 2rem;
   }
   
-  .calendar-demo {
+  .calendar-demo,
+  .button-demo,
+  .text-demo {
     padding: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
   }
 }
