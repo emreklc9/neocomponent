@@ -1,5 +1,5 @@
 {
-  "name": "neo-component",
+  "name": "@emreklc9/neo-component",
   "version": "1.0.0",
   "description": "Modern React UI kütüphanesi - Takvim ve diğer bileşenler",
   "type": "module",
@@ -57,12 +57,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/emreklc9/neocomponent.git"
+    "url": "git+https://github.com/emreklc9/neocomponent.git"
   },
   "bugs": {
     "url": "https://github.com/emreklc9/neocomponent/issues"
   },
   "homepage": "https://github.com/emreklc9/neocomponent#readme",
-  "author": "",
+  "author": "emreklc9",
   "license": "MIT"
 }
